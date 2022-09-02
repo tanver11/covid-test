@@ -1,0 +1,93 @@
+print("Welcome to covid section")
+covid = input("Do you want to know about your covid condition? ")
+if covid.lower()=="no":
+    quit()
+print("Ok!got it.I have few question for you.all question are based on yes or no")
+score = 0
+
+
+
+#1 
+Question = input("Do you have fever/cough? ")
+if Question.lower()=="yes":
+    print("Ok! next question")
+    score = score+1 
+else:
+    print("Ok! next question")
+    
+    
+    
+#2    
+Question = input("Do you loss of taste or smell? ")
+if Question.lower()=="yes":
+    print("Ok! next question")
+    score = score+1 
+else:
+    print("Ok! next question")
+    
+    
+    
+    
+    
+ #3   
+Question = input("Do you have sore throat? ")
+if Question.lower()=="yes":
+    print("Ok! next question")
+    score = score+1 
+else:
+    print("Ok! next question")
+    
+    
+    
+#4    
+Question = input("Do you have red or irritated eyes? ")
+if Question.lower()=="yes":
+    print("Ok! next question")
+    score = score+1 
+else:
+    print("Ok! next question")
+    
+    
+    
+#5    
+Question = input("Do you have difficulty breathing or shortness of breath? ")
+if Question.lower()=="yes":
+    print("Ok! next question")
+    score = score+1 
+else:
+    print("Ok! next question")
+    
+    
+    
+    
+ #6   
+Question = input("Do you have chest pain? ")
+if Question.lower()=="yes":
+    print("Ok! next question")
+    score = score+1 
+else:
+    print("Ok! next question")
+    
+    
+    
+#7    
+Question = input("Do you have diarrhoea? ")
+if Question.lower()=="yes":
+    print("Ok! next question")
+    score = score+1 
+else:
+    print("Ok! next question")
+    
+    
+    
+percentage=(score//7)*100    
+print("You positively answer " + str(score) + " questions")
+print("Your covid possibility is " + str(percentage) +"%. Don't panic.It's just a prediction" )
+if percentage<=20:
+    print("You are safe.Move carefully")
+elif percentage>20 and percentage<=50:
+    print("You have few syndrome.Be safe")
+elif percentage>50 and percentage<=70:
+    print("You are in risky zone.Please go to doctor")
+else:
+    print("You are on dangerous position.Keep yourself isolated and help from doctors")
